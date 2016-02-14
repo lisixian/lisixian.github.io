@@ -2,42 +2,72 @@
 <html>
 	<head>
 	<meta charset="utf-8"/>
-	<title>老婆，我爱你！</title>
+	<title></title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 	<link rel="stylesheet" href="css/mui.min.css" />
 	<style>
 	html,body{
 		height: 100%;
 	}
-	.main{
+	.bg{
+		width: 100%;
+		vertical-align: top;
+	}
+	.wraper{
+		width: 100%;
+		position: relative;
+	}
+	.inner{
 		width: 100%;
 		height: 100%;
-		background-color: #FF80C0;
-		background: url(images/bg2.jpg) no-repeat scroll center center;
-		-webkit-background-size: 100% auto;
-		background-size: 100% auto;
-		display: -webkit-flex;
-		display: flex;
-		align-items: center;
-		-webkit-align-items: center;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	.ctn{
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
 	}
 	.text{
-		-webkit-flex: 1;
-		flex: 1;
 		padding: 0 10%;
-		font-size: 1.4rem;
+		font-size: 14px;
+		line-height: 1.2;
 		font-weight: bold;
+	}
+	@media (min-width: 321px) {
+		.text{
+			font-size: 15px;
+			line-height: 1.3;
+		}
+	}
+	@media (min-width: 376px) {
+		.text{
+			font-size: 16px;
+			line-height: 1.4;
+		}
 	}
 	@media (min-width: 1024px) {
 		.text{
 			font-size: 30px;
 		}
+		.wraper{
+			width: 800px;
+			margin: 0 auto;
+		}
 	}
 	</style>
 	</head>
 <body>
-<div class="main">
-	<div class="text">亲爱的老婆，情人节快乐，这是第一个对我而言有意义的情人节，虽然现阶段我不能在物质上给你什么承诺，但我想一直保持这颗心下去，在未来的有生之年，永远只牵你的手，看你的眼睛，听你的声音。老婆，我爱你！</div>
+<div class="wraper">
+	<img src="images/bg2.jpg" class="bg" />
+	<div class="inner">
+		<table class="ctn">
+			<tr>
+				<td class="text">亲爱的老婆，情人节快乐，<br />这是第一个对我而言有意义的情人节，虽然现阶段我不能在物质上给你什么承诺，但我想一直保持这颗心下去，在未来的有生之年，永远只牵你的手，看你的眼睛，听你的声音。<br />老婆，我爱你！</td>
+			</tr>
+		</table>
+	</div>
 </div>
 </body>
 </html>
